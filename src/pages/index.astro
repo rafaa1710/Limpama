@@ -60,26 +60,30 @@ const year = new Date().getFullYear();
       </section>
 
       <section class="services wrap" id="servicios" aria-label="Servicios">
-        <article class="service-card gardening">
+
+        <a class="service-card gardening" href="#jardineria">
           <span class="service-icon" aria-hidden="true">✦</span>
           <h2>Jardinería</h2>
           <p>Cuidamos cada rincón verde para que tu jardín se vea sano y ordenado.</p>
-        </article>
-        <article class="service-card pools">
+        </a>
+        <a class="service-card pools" href="#piscinas">
           <span class="service-icon" aria-hidden="true">◌</span>
           <h2>Piscinas</h2>
           <p>Mantenimiento y puesta a punto para disfrutar del agua sin preocupaciones.</p>
-        </article>
-        <article class="service-card palms">
+        </a>
+
+        <a class="service-card palms" href="#palmeras">
           <span class="service-icon" aria-hidden="true">⌁</span>
           <h2>Poda de palmeras</h2>
           <p>Una poda cuidada y segura para conservar tus palmeras en perfecto estado.</p>
-        </article>
-		<article class="service-card palms">
+        </a>
+
+        <a class="service-card plumbing" href="#fontaneria">
           <span class="service-icon" aria-hidden="true">⌁</span>
-          <h2>Fontaneria</h2>
-          <p>Todo tipo de servicios de fontanería.</p>
-        </article>
+          <h2>Fontanería</h2>
+          <p>Soluciones rápidas y profesionales para instalaciones y averías de fontanería.</p>
+        </a>
+
 		<article class="service-card palms">
           <span class="service-icon" aria-hidden="true">⌁</span>
           <h2>Mantenimiento de comunidades</h2>
@@ -91,9 +95,149 @@ const year = new Date().getFullYear();
           <h2>Desatoros</h2>
           <p>Servicios especializados para el mantenimiento de espacios comunes en comunidades de vecinos.</p>
         </article>
-
-        
       </section>
+
+      <section class="services-intro wrap">
+  <p class="section-label">Nuestros servicios</p>
+  <h2>Soluciones para cuidar cada rincón de tu exterior.</h2>
+  <p>Descubre cómo podemos ayudarte a mantener tus espacios siempre en perfectas condiciones.</p>
+</section>
+
+      
+      <section class="service-detail wrap" id="jardineria">
+        <div class="service-detail-image">
+          <img
+            src="/jardin.webp"
+            alt="Jardín cuidado y mantenido profesionalmente"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="service-detail-content">
+          <p class="section-label">Cuidamos cada espacio verde</p>
+
+          <h2>Jardinería y mantenimiento de jardines</h2>
+
+          <p>
+            Nos encargamos de mantener tu jardín en las mejores condiciones
+            durante todo el año. Cuidamos cada detalle para que tus zonas
+            verdes luzcan siempre limpias, ordenadas y llenas de vida.
+          </p>
+
+          <p>
+            Realizamos trabajos de mantenimiento, corte de césped, poda,
+            limpieza de jardines, cuidado de plantas y conservación de
+            zonas ajardinadas en viviendas, comunidades de vecinos y hoteles.
+          </p>
+
+          <a class="service-detail-link" href="#contacto">
+            Solicita tu presupuesto <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+
+      
+<section class="service-detail service-detail-reverse wrap" id="piscinas">
+  <div class="service-detail-image">
+    <img
+      src="/imgPisci.webp"
+      alt="Piscina limpia y preparada para disfrutar"
+      loading="lazy"
+    />
+  </div>
+
+  <div class="service-detail-content">
+    <p class="section-label">Agua limpia y en perfectas condiciones</p>
+
+    <h2>Mantenimiento y limpieza de piscinas</h2>
+
+    <p>
+      Nos ocupamos del mantenimiento integral de tu piscina para que
+      esté siempre limpia, cuidada y lista para disfrutar. Trabajamos
+      para conservar el agua en las mejores condiciones durante todo
+      el año.
+    </p>
+
+    <p>
+      Realizamos limpieza de fondos y paredes, control y tratamiento
+      del agua, mantenimiento de filtros, revisión de instalaciones
+      y puesta a punto de piscinas.
+    </p>
+
+    <a class="service-detail-link" href="#contacto">
+      Solicita tu presupuesto <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+
+
+<section class="service-detail wrap" id="palmeras">
+  <div class="service-detail-image">
+    <img
+      src="/poda.webp"
+      alt="Trabajo profesional de poda y mantenimiento de palmeras"
+      loading="lazy"
+    />
+  </div>
+
+  <div class="service-detail-content">
+    <p class="section-label">Cuidado y conservación de palmeras</p>
+
+    <h2>Poda profesional de palmeras</h2>
+
+    <p>
+      Realizamos trabajos de poda y mantenimiento de palmeras,
+      cuidando su aspecto y conservación. Nos encargamos de retirar
+      las hojas secas y los elementos deteriorados para mantener
+      tus palmeras en buenas condiciones.
+    </p>
+
+    <p>
+      Trabajamos en jardines particulares y comunidades de propietarios,
+      adaptando cada intervención a las características de la palmera
+      y las necesidades de cada espacio.
+    </p>
+
+    <a class="service-detail-link" href="#contacto">
+      Solicita tu presupuesto <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+
+<section class="service-detail service-detail-reverse wrap" id="fontaneria">
+  <div class="service-detail-image">
+    <img
+      src="/fontaneria.webp"
+      alt="Trabajos profesionales de fontanería"
+      loading="lazy"
+    />
+  </div>
+
+  <div class="service-detail-content">
+    <p class="section-label">Instalaciones y reparaciones</p>
+
+    <h2>Servicios profesionales de fontanería</h2>
+
+    <p>
+      Realizamos trabajos de fontanería para viviendas, jardines y comunidades,
+      ofreciendo soluciones para instalaciones, reparaciones y mantenimiento
+      de sistemas de agua.
+    </p>
+
+    <p>
+      Nos ocupamos de pequeñas averías, fugas, grifos, tuberías y otras
+      necesidades de fontanería, trabajando para que todo funcione
+      correctamente y con la mayor tranquilidad.
+    </p>
+
+    <a class="service-detail-link" href="#contacto">
+      Solicita tu presupuesto <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+
+
 
       <section class="intro wrap">
         <p class="section-label">Todo a punto, todo el año</p>
@@ -229,6 +373,96 @@ const year = new Date().getFullYear();
   .footer-call { color: #c5e658; font-size: 13px; font-weight: 700; text-decoration: none; }
   .footer-call span { margin-left: 7px; font-size: 17px; vertical-align: -1px; }
   a:focus-visible { outline: 3px solid #91bd27; outline-offset: 4px; }
+
+  
+/* Detalle de servicios */
+.service-detail {display: grid;grid-template-columns: 1fr 1fr;align-items: center;gap: 75px;padding-top: 100px;}
+.service-detail-image {height: 480px;overflow: hidden;border-radius: 22px;}.service-detail-image img {width: 100%;height: 100%;object-fit: cover;display: block;}
+.service-detail-content {max-width: 540px;}
+.service-detail-content h2 {margin: 0 0 25px;font-size: clamp(34px, 4vw, 49px);line-height: 1.12;}
+.service-detail-content > p:not(.section-label) {color: #5e746d;font-size: 16px;line-height: 1.8;margin: 0 0 18px;}
+
+.service-detail-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+  color: var(--pine);
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 1px solid #91bd27;
+  padding-bottom: 7px;
+}
+
+.service-detail-link span {
+  font-size: 20px;
+}
+
+.service-card {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px rgba(20, 61, 54, .2);
+}
+
+.service-detail-reverse .service-detail-image {
+  order: 2;
+}
+
+.service-detail-reverse .service-detail-content {
+  order: 1;
+}
+
+.services-intro {
+  padding-top: 110px;
+  padding-bottom: 15px;
+}
+
+.services-intro h2 {
+  max-width: 750px;
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.12;
+}
+
+.services-intro > p:last-child {
+  max-width: 550px;
+  color: #5e746d;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 18px;
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+  .service-detail {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 65px;
+  }
+
+  .service-detail-image {
+    height: 300px;
+  }
+
+  .service-detail-content h2 {
+    font-size: 36px;
+  }
+
+  .services-intro {
+  padding-top: 75px;
+  padding-bottom: 5px;
+}
+.service-detail-reverse .service-detail-image,
+.service-detail-reverse .service-detail-content {
+  order: initial;
+}
+}
+
   
   
   @media (max-width: 980px) {
