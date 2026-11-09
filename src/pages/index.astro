@@ -43,7 +43,7 @@ const year = new Date().getFullYear();
       <section class="hero" aria-labelledby="hero-title">
         <img
           class="hero-image"
-          src="/imagenLimpama.webp"
+          src="/limpama-hero.webp"
           alt="Piscina exterior rodeada de vegetación"
         />
         <div class="hero-overlay"></div>
@@ -84,17 +84,17 @@ const year = new Date().getFullYear();
           <p>Soluciones rápidas y profesionales para instalaciones y averías de fontanería.</p>
         </a>
 
-		<article class="service-card palms">
+		    <a class="service-card palms " href="#comunidades">
           <span class="service-icon" aria-hidden="true">⌁</span>
           <h2>Mantenimiento de comunidades</h2>
           <p>Servicios especializados para el mantenimiento de espacios comunes en comunidades de vecinos.</p>
-        </article>
+        </a>
 
-        <article class="service-card palms">
+        <a class="service-card palms" href="#desatoros">
           <span class="service-icon" aria-hidden="true">⌁</span>
           <h2>Desatoros</h2>
           <p>Servicios especializados para el mantenimiento de espacios comunes en comunidades de vecinos.</p>
-        </article>
+        </a>
       </section>
 
       <section class="services-intro wrap">
@@ -127,10 +127,12 @@ const year = new Date().getFullYear();
           <p>
             Realizamos trabajos de mantenimiento, corte de césped, poda,
             limpieza de jardines, cuidado de plantas y conservación de
-            zonas ajardinadas en viviendas, comunidades de vecinos y hoteles.
+            zonas ajardinadas en viviendas, comunidades de vecinos y hoteles. 
+            Además, nos encargamos de la recogida y retirada de todos los restos de poda y residuos vegetales, 
+            dejando cada espacio limpio y perfectamente acondicionado tras finalizar nuestros trabajos.
           </p>
 
-          <a class="service-detail-link" href="#contacto">
+          <a class="service-detail-link" href="#contacto" data-budget-service="Jardinería">
             Solicita tu presupuesto <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -165,7 +167,7 @@ const year = new Date().getFullYear();
       y puesta a punto de piscinas.
     </p>
 
-    <a class="service-detail-link" href="#contacto">
+    <a class="service-detail-link" href="#contacto" data-budget-service="Piscinas">
       Solicita tu presupuesto <span aria-hidden="true">→</span>
     </a>
   </div>
@@ -199,7 +201,7 @@ const year = new Date().getFullYear();
       y las necesidades de cada espacio.
     </p>
 
-    <a class="service-detail-link" href="#contacto">
+    <a class="service-detail-link" href="#contacto" data-budget-service="Poda de palmeras">
       Solicita tu presupuesto <span aria-hidden="true">→</span>
     </a>
   </div>
@@ -208,7 +210,7 @@ const year = new Date().getFullYear();
 <section class="service-detail service-detail-reverse wrap" id="fontaneria">
   <div class="service-detail-image">
     <img
-      src="/fontaneria.webp"
+      src="/fonta.webp"
       alt="Trabajos profesionales de fontanería"
       loading="lazy"
     />
@@ -231,8 +233,101 @@ const year = new Date().getFullYear();
       correctamente y con la mayor tranquilidad.
     </p>
 
-    <a class="service-detail-link" href="#contacto">
+    <a class="service-detail-link" href="#contacto" data-budget-service="Fontanería">
       Solicita tu presupuesto <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+
+<section class="service-detail wrap" id="comunidades">
+  <div class="service-detail-image">
+    <img
+      src="/comunidad.webp"
+      alt="Limpieza y mantenimiento de zonas exteriores en comunidades"
+      loading="lazy"
+    />
+  </div>
+
+  <div class="service-detail-content">
+    <p class="section-label">
+      Cuidado y conservación de espacios comunes
+    </p>
+
+    <h2>Mantenimiento integral de comunidades</h2>
+
+    <p>
+  Nos encargamos del mantenimiento y conservación de
+  comunidades de propietarios, ofreciendo soluciones
+  integrales para mantener sus instalaciones y espacios
+  comunes en las mejores condiciones.
+</p>
+
+<p>
+  Ofrecemos servicios de conserjería para garantizar una
+  atención cercana y personalizada a los vecinos, atendiendo
+  sus necesidades y contribuyendo al buen funcionamiento
+  de la comunidad.
+</p>
+
+<p>
+  Además, realizamos trabajos de limpieza y conservación
+  de exteriores, mantenimiento de jardines, piscinas y
+  pequeñas reparaciones, adaptándonos a las necesidades
+  de cada comunidad.
+</p>
+
+<p>
+  Nuestro compromiso es ofrecer un servicio profesional,
+  eficiente y de confianza, asegurando espacios cuidados
+  y una atención de calidad durante todo el año.
+</p>
+
+    <a class="service-detail-link" href="#contacto" data-budget-service="Mantenimiento de comunidades">
+      Solicita tu presupuesto
+      <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+
+
+
+<section class="service-detail service-detail-reverse wrap" id="desatoros">
+  <div class="service-detail-image">
+    <img
+      src="/desatoros.webp"
+      alt="Trabajos profesionales de desatoros y limpieza de tuberías"
+      loading="lazy"
+    />
+  </div>
+
+  <div class="service-detail-content">
+    <p class="section-label">
+      Limpieza y desobstrucción de tuberías
+    </p>
+
+    <h2>Servicios profesionales de desatoros</h2>
+
+    <p>
+      Ofrecemos soluciones para eliminar atascos y obstrucciones
+      en tuberías, desagües y sistemas de evacuación de agua,
+      ayudando a recuperar su correcto funcionamiento.
+    </p>
+
+    <p>
+      Realizamos trabajos de desatoros en viviendas,
+      comunidades de propietarios e instalaciones exteriores,
+      adaptándonos a las características de cada problema.
+    </p>
+
+    <p>
+      Nuestro objetivo es resolver las incidencias de forma
+      eficaz, evitando molestias y contribuyendo al buen
+      mantenimiento de las instalaciones.
+    </p>
+
+    <a class="service-detail-link" href="#contacto" data-budget-service="Desatoros">
+      Solicita tu presupuesto
+      <span aria-hidden="true">→</span>
     </a>
   </div>
 </section>
@@ -242,13 +337,41 @@ const year = new Date().getFullYear();
       <section class="intro wrap">
         <p class="section-label">Todo a punto, todo el año</p>
         <h2>Disfruta de tu exterior.<br />Del cuidado nos ocupamos nosotros.</h2>
-        <p class="description">Mantenimiento de piscinas, puesta a punto y jardinería para que tu casa luzca siempre como merece.</p>
+        <p class="description">Tu tranquilidad empieza con un buen mantenimiento.</p>
       </section>
 
       <section class="contact" id="contacto">
         <div class="wrap contact-content">
-          <p>¿Hablamos de tu espacio?</p>
-          <a href="mailto:info@limpama.es">info@limpama.es</a>
+          <div class="contact-copy">
+            <p class="section-label">Cuéntanos qué necesitas</p>
+            <h2>¿Hablamos de tu espacio?</h2>
+            <p>Déjanos tus datos y dinos qué servicio te interesa. Nos pondremos en contacto contigo para preparar un presupuesto a medida.</p>
+            <a href="mailto:info@limpama.es">info@limpama.es</a>
+          </div>
+
+          <form class="contact-form" action="mailto:info@limpama.es" method="post" enctype="text/plain">
+            <div class="form-field">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-field">
+              <label for="servicio">Servicio en el que estás interesado</label>
+              <select id="servicio" name="servicio" required>
+                <option value="" selected disabled>Selecciona un servicio</option>
+                <option value="Jardinería">Jardinería</option>
+                <option value="Piscinas">Piscinas</option>
+                <option value="Poda de palmeras">Poda de palmeras</option>
+                <option value="Fontanería">Fontanería</option>
+                <option value="Mantenimiento de comunidades">Mantenimiento de comunidades</option>
+                <option value="Desatoros">Desatoros</option>
+              </select>
+            </div>
+            <button type="submit">Solicitar presupuesto <span aria-hidden="true">→</span></button>
+          </form>
         </div>
       </section>
     </main>
@@ -278,7 +401,7 @@ const year = new Date().getFullYear();
           </div>
           <div class="footer-detail">
             <span class="footer-detail-icon" aria-hidden="true">⌖</span>
-            <div><p class="footer-kicker">Zona de servicio</p><a href="https://www.google.com/maps/search/?api=1&query=M%C3%A1laga%2C+Espa%C3%B1a" target="_blank" rel="noopener noreferrer">Málaga y Costa del Sol</a></div>
+            <div><p class="footer-kicker">Zona de servicio</p><p style="color:#fff">Málaga y Costa del Sol</p></div>
           </div>
         </section>
 
@@ -295,6 +418,66 @@ const year = new Date().getFullYear();
       </div>
       
     </footer>
+
+    <dialog class="budget-dialog" id="budget-dialog" aria-labelledby="budget-dialog-title">
+      <div class="budget-dialog-panel">
+        <button class="budget-dialog-close" type="button" aria-label="Cerrar formulario">×</button>
+        <p class="section-label">Presupuesto sin compromiso</p>
+        <h2 id="budget-dialog-title">Cuéntanos qué necesitas</h2>
+        <p class="budget-dialog-copy">Déjanos tus datos y nos pondremos en contacto contigo para preparar un presupuesto a medida.</p>
+
+        <form class="contact-form budget-dialog-form" action="mailto:info@limpama.es" method="post" enctype="text/plain">
+          <div class="form-field">
+            <label for="modal-nombre">Nombre</label>
+            <input id="modal-nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-field">
+            <label for="modal-email">Email</label>
+            <input id="modal-email" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-field">
+            <label for="modal-servicio">Servicio en el que estás interesado</label>
+            <select id="modal-servicio" name="servicio" required>
+              <option value="Jardinería">Jardinería</option>
+              <option value="Piscinas">Piscinas</option>
+              <option value="Poda de palmeras">Poda de palmeras</option>
+              <option value="Fontanería">Fontanería</option>
+              <option value="Mantenimiento de comunidades">Mantenimiento de comunidades</option>
+              <option value="Desatoros">Desatoros</option>
+            </select>
+          </div>
+          <button type="submit">Solicitar presupuesto <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+    </dialog>
+
+    <script>
+      const budgetDialog = document.querySelector<HTMLDialogElement>('#budget-dialog');
+      const serviceSelect = document.querySelector<HTMLSelectElement>('#modal-servicio');
+      const closeButton = document.querySelector<HTMLButtonElement>('.budget-dialog-close');
+      const budgetLinks = document.querySelectorAll<HTMLElement>('[data-budget-service]');
+
+      const closeBudgetDialog = () => {
+        budgetDialog?.close();
+        document.body.classList.remove('dialog-open');
+      };
+
+      budgetLinks.forEach((link) => {
+        link.addEventListener('click', (event) => {
+          if (!budgetDialog) return;
+          event.preventDefault();
+          if (serviceSelect) serviceSelect.value = link.dataset.budgetService ?? '';
+          budgetDialog.showModal();
+          document.body.classList.add('dialog-open');
+        });
+      });
+
+      closeButton?.addEventListener('click', closeBudgetDialog);
+      budgetDialog?.addEventListener('click', (event) => {
+        if (event.target === budgetDialog) closeBudgetDialog();
+      });
+      budgetDialog?.addEventListener('close', () => document.body.classList.remove('dialog-open'));
+    </script>
   </body>
 </html>
 
@@ -333,13 +516,10 @@ const year = new Date().getFullYear();
   .button { display: inline-flex; align-items: center; gap: 21px; margin-top: 33px; padding: 15px 18px 15px 23px; background: var(--aqua); color: #123b34; border-radius: 100px; font-size: 14px; font-weight: 800; text-decoration: none; }
   .button span { font-size: 22px; line-height: 12px; }
   .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 56px; position: relative; z-index: 2; }
-  .service-card { min-height: 235px; padding: 30px; border-radius: 18px; color: var(--pine); box-shadow: 0 13px 30px rgba(20, 61, 54, .15); }
+  .service-card { min-height: 235px; padding: 30px; background: #dcebd2; border-radius: 18px; color: var(--pine); box-shadow: 0 13px 30px rgba(20, 61, 54, .15); }
   .service-card h2 { margin: 40px 0 10px; font-size: 28px; letter-spacing: -1.3px; line-height: 1.1; }
   .service-card p { max-width: 280px; margin: 0; color: #426259; font-size: 15px; line-height: 1.55; }
   .service-icon { display: grid; place-items: center; width: 39px; height: 39px; border: 1px solid rgba(20, 61, 54, .22); border-radius: 50%; font-size: 23px; }
-  .gardening { background: #dcebd2; }
-  .pools { background: #ccebe7; }
-  .palms { background: #e9e2bd; }
   .company-summary { max-width: 1080px; padding: 56px 0 0; text-align: center; }
   .company-summary h2 { max-width: none; }
   .company-summary hr { width: 100%; margin: 28px 0; border: 0; border-top: 1px solid #bed5ca; }
@@ -349,9 +529,20 @@ const year = new Date().getFullYear();
   h2 { max-width: 750px; margin: 0; font-size: clamp(34px, 4.4vw, 57px); line-height: 1.07; }
   .description { max-width: 500px; margin: 28px 0 0; color: #5e746d; font-size: 17px; line-height: 1.65; }
   .contact { background: #d6eee5; }
-  .contact-content { padding: 58px 0; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-  .contact p { margin: 0; font: 700 26px/1.2 'Manrope', sans-serif; letter-spacing: -1px; }
-  .contact a { color: var(--pine); font-size: 20px; font-weight: 700; text-decoration-color: #77a99a; text-underline-offset: 5px; }
+  .contact-content { padding: 82px 0; display: grid; grid-template-columns: minmax(0, .8fr) minmax(440px, 1fr); align-items: center; gap: clamp(48px, 8vw, 120px); }
+  .contact-copy h2 { max-width: 520px; margin-bottom: 22px; font-size: clamp(38px, 4vw, 56px); }
+  .contact-copy > p:not(.section-label) { max-width: 500px; margin: 0 0 28px; color: #426259; font-size: 16px; line-height: 1.7; }
+  .contact-copy a { color: var(--pine); font-size: 18px; font-weight: 700; text-decoration-color: #77a99a; text-underline-offset: 5px; }
+  .contact-form { padding: clamp(25px, 4vw, 42px); background: rgba(245, 247, 242, .5); border: 1px solid rgba(20, 61, 54, .12); border-radius: 22px; backdrop-filter: blur(10px); }
+  .form-field { display: grid; gap: 8px; margin-bottom: 20px; }
+  .form-field label { color: var(--pine); font-size: 14px; font-weight: 700; }
+  .form-field input, .form-field select { width: 100%; min-height: 52px; padding: 0 16px; color: var(--ink); background: rgba(255, 255, 255, .65); border: 1px solid rgba(20, 61, 54, .2); border-radius: 10px; font: 500 15px/1 'DM Sans', sans-serif; }
+  .form-field input::placeholder { color: #789087; }
+  .form-field input:focus, .form-field select:focus { outline: 3px solid rgba(145, 189, 39, .3); border-color: #689320; }
+  .contact-form button { width: 100%; min-height: 54px; display: flex; align-items: center; justify-content: space-between; margin-top: 8px; padding: 0 19px 0 22px; color: #143d36; background: rgba(166, 218, 120, .58); border: 1px solid rgba(74, 121, 37, .28); border-radius: 100px; font: 800 15px/1 'DM Sans', sans-serif; cursor: pointer; transition: background-color .2s ease, transform .2s ease; }
+  .contact-form button:hover { background: rgba(166, 218, 120, .82); transform: translateY(-1px); }
+  .contact-form button:focus-visible { outline: 3px solid #91bd27; outline-offset: 4px; }
+  .contact-form button span { font-size: 22px; }
   footer { background: var(--pine); color: #b3cdc3; }
   .footer-top { display: grid; grid-template-columns: minmax(260px, 1.2fr) minmax(270px, 1fr) 120px; gap: clamp(38px, 7vw, 100px); padding: 68px 0 54px; }
   .footer-logo { color: #fff; margin-bottom: 37px; }
@@ -397,6 +588,17 @@ const year = new Date().getFullYear();
 .service-detail-link span {
   font-size: 20px;
 }
+
+body.dialog-open { overflow: hidden; }
+.budget-dialog { width: min(94vw, 620px); max-height: calc(100vh - 32px); padding: 0; color: var(--ink); background: transparent; border: 0; overflow: visible; }
+.budget-dialog::backdrop { background: rgba(8, 35, 31, .72); backdrop-filter: blur(5px); }
+.budget-dialog-panel { position: relative; max-height: calc(100vh - 32px); padding: clamp(27px, 5vw, 45px); background: #eef5ed; border: 1px solid rgba(255, 255, 255, .5); border-radius: 24px; box-shadow: 0 30px 80px rgba(5, 32, 27, .35); overflow-y: auto; }
+.budget-dialog-panel h2 { max-width: 480px; margin-bottom: 14px; font-size: clamp(32px, 5vw, 46px); }
+.budget-dialog-copy { max-width: 510px; margin: 0 0 25px; color: #526f67; font-size: 15px; line-height: 1.6; }
+.budget-dialog-close { position: absolute; top: 18px; right: 18px; display: grid; place-items: center; width: 42px; height: 42px; padding: 0; color: var(--pine); background: #fff; border: 1px solid rgba(20, 61, 54, .16); border-radius: 50%; font: 400 27px/1 'DM Sans', sans-serif; cursor: pointer; }
+.budget-dialog-close:hover { background: #dcebd2; }
+.budget-dialog-close:focus-visible { outline: 3px solid #91bd27; outline-offset: 3px; }
+.budget-dialog-form { padding: 0; background: transparent; border: 0; border-radius: 0; backdrop-filter: none; }
 
 .service-card {
   display: block;
@@ -502,10 +704,9 @@ const year = new Date().getFullYear();
     h2 { font-size: clamp(34px, 9.5vw, 46px); }
     .intro { padding: 77px 0 82px; }
     .description { margin-top: 22px; font-size: 16px; }
-    .contact-content { align-items: flex-start; flex-direction: column; }
-    .contact-content { padding: 42px 0; }
-    .contact p { font-size: 24px; }
-    .contact a { font-size: 18px; }
+    .contact-content { grid-template-columns: 1fr; gap: 34px; padding: 58px 0; }
+    .contact-copy h2 { font-size: 40px; }
+    .contact-form { padding: 24px; }
     .footer-top { grid-template-columns: 1fr; gap: 39px; padding: 48px 0 38px; }
     .footer-logo { margin-bottom: 29px; }
     .footer-intro h2 { max-width: 330px; }
@@ -523,5 +724,9 @@ const year = new Date().getFullYear();
     .hero { min-height: 490px; }
     .service-card { padding: 22px; }
     .company-summary { padding-top: 36px; }
+    .budget-dialog { width: calc(100vw - 20px); max-height: calc(100vh - 20px); }
+    .budget-dialog-panel { max-height: calc(100vh - 20px); padding: 25px 20px; border-radius: 18px; }
+    .budget-dialog-panel .section-label { padding-right: 42px; }
+    .budget-dialog-close { top: 13px; right: 13px; }
   }
 </style>
