@@ -84,13 +84,13 @@ const year = new Date().getFullYear();
           <p>Soluciones rápidas y profesionales para instalaciones y averías de fontanería.</p>
         </a>
 
-		    <a class="service-card palms " href="#comunidades">
+		    <a class="service-card palms" href="#comunidades">
           <span class="service-icon" aria-hidden="true">⌁</span>
           <h2>Mantenimiento de comunidades</h2>
           <p>Servicios especializados para el mantenimiento de espacios comunes en comunidades de vecinos.</p>
         </a>
 
-        <a class="service-card palms" href="#desatoros">
+        <a class="service-card unclogging" href="#desatoros">
           <span class="service-icon" aria-hidden="true">⌁</span>
           <h2>Desatoros</h2>
           <p>Servicios especializados para el mantenimiento de espacios comunes en comunidades de vecinos.</p>
@@ -127,9 +127,11 @@ const year = new Date().getFullYear();
           <p>
             Realizamos trabajos de mantenimiento, corte de césped, poda,
             limpieza de jardines, cuidado de plantas y conservación de
-            zonas ajardinadas en viviendas, comunidades de vecinos y hoteles. 
-            Además, nos encargamos de la recogida y retirada de todos los restos de poda y residuos vegetales, 
-            dejando cada espacio limpio y perfectamente acondicionado tras finalizar nuestros trabajos.
+            zonas ajardinadas en viviendas, comunidades de vecinos y hoteles.
+            <span class="tablet-hidden-copy">
+              Además, nos encargamos de la recogida y retirada de todos los restos de poda y residuos vegetales,
+              dejando cada espacio limpio y perfectamente acondicionado tras finalizar nuestros trabajos.
+            </span>
           </p>
 
           <a class="service-detail-link" href="#contacto" data-budget-service="Jardinería">
@@ -255,31 +257,39 @@ const year = new Date().getFullYear();
 
     <h2>Mantenimiento integral de comunidades</h2>
 
-    <p>
+    <p class="community-desktop-copy">
   Nos encargamos del mantenimiento y conservación de
   comunidades de propietarios, ofreciendo soluciones
   integrales para mantener sus instalaciones y espacios
   comunes en las mejores condiciones.
 </p>
 
-<p>
+<p class="community-desktop-copy">
   Ofrecemos servicios de conserjería para garantizar una
   atención cercana y personalizada a los vecinos, atendiendo
   sus necesidades y contribuyendo al buen funcionamiento
   de la comunidad.
 </p>
 
-<p>
+<p class="community-desktop-copy">
   Además, realizamos trabajos de limpieza y conservación
   de exteriores, mantenimiento de jardines, piscinas y
   pequeñas reparaciones, adaptándonos a las necesidades
   de cada comunidad.
 </p>
 
-<p>
+<p class="community-desktop-copy">
   Nuestro compromiso es ofrecer un servicio profesional,
   eficiente y de confianza, asegurando espacios cuidados
   y una atención de calidad durante todo el año.
+</p>
+
+<p class="community-responsive-copy">
+  Nos encargamos del mantenimiento y conservación de comunidades de propietarios, ofreciendo soluciones integrales para mantener sus instalaciones y espacios comunes en las mejores condiciones.
+</p>
+
+<p class="community-responsive-copy">
+  Ofrecemos servicios de conserjería, limpieza, conservación de exteriores, mantenimiento de jardines, piscinas y pequeñas reparaciones para garantizar una atención cercana y personalizada a los vecinos, atendiendo sus necesidades y contribuyendo al buen funcionamiento de la comunidad.
 </p>
 
     <a class="service-detail-link" href="#contacto" data-budget-service="Mantenimiento de comunidades">
@@ -368,6 +378,7 @@ const year = new Date().getFullYear();
                 <option value="Fontanería">Fontanería</option>
                 <option value="Mantenimiento de comunidades">Mantenimiento de comunidades</option>
                 <option value="Desatoros">Desatoros</option>
+                <option value="Otros">Otros</option>
               </select>
             </div>
             <button type="submit">Solicitar presupuesto <span aria-hidden="true">→</span></button>
@@ -409,6 +420,7 @@ const year = new Date().getFullYear();
           <p class="footer-kicker">Explora</p>
           <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a>
         </nav>
+
       </div>
       <div class="wrap footer-bottom">
         <small>© {year} Limpama. Todos los derechos reservados.</small>
@@ -418,6 +430,19 @@ const year = new Date().getFullYear();
       </div>
       
     </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/34686364887"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactar con Limpama por WhatsApp"
+      title="Contactar por WhatsApp"
+    >
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path d="M16.04 3A12.83 12.83 0 0 0 5.02 22.4L3.3 28.68l6.43-1.69A12.93 12.93 0 1 0 16.04 3Zm0 23.67c-1.93 0-3.82-.52-5.47-1.5l-.39-.23-3.81 1 1.02-3.71-.25-.4a10.7 10.7 0 1 1 8.9 4.84Zm5.87-8.02c-.32-.16-1.9-.94-2.2-1.05-.29-.11-.5-.16-.72.16-.21.32-.82 1.05-1.01 1.27-.18.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59a9.63 9.63 0 0 1-1.78-2.21c-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.18.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.1-1.12 2.67s1.15 3.1 1.31 3.31c.16.21 2.26 3.45 5.48 4.84.76.33 1.36.53 1.83.67.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.14-.29-.22-.61-.38Z" />
+      </svg>
+    </a>
 
     <dialog class="budget-dialog" id="budget-dialog" aria-labelledby="budget-dialog-title">
       <div class="budget-dialog-panel">
@@ -444,6 +469,7 @@ const year = new Date().getFullYear();
               <option value="Fontanería">Fontanería</option>
               <option value="Mantenimiento de comunidades">Mantenimiento de comunidades</option>
               <option value="Desatoros">Desatoros</option>
+              <option value="Otros">Otros</option>
             </select>
           </div>
           <button type="submit">Solicitar presupuesto <span aria-hidden="true">→</span></button>
@@ -517,6 +543,9 @@ const year = new Date().getFullYear();
   .button span { font-size: 22px; line-height: 12px; }
   .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 56px; position: relative; z-index: 2; }
   .service-card { min-height: 235px; padding: 30px; background: #dcebd2; border-radius: 18px; color: var(--pine); box-shadow: 0 13px 30px rgba(20, 61, 54, .15); }
+  .service-card.pools,
+  .service-card.plumbing { background: #d9eef8; }
+  .service-card.unclogging { background: #cfeee8; }
   .service-card h2 { margin: 40px 0 10px; font-size: 28px; letter-spacing: -1.3px; line-height: 1.1; }
   .service-card p { max-width: 280px; margin: 0; color: #426259; font-size: 15px; line-height: 1.55; }
   .service-icon { display: grid; place-items: center; width: 39px; height: 39px; border: 1px solid rgba(20, 61, 54, .22); border-radius: 50%; font-size: 23px; }
@@ -545,6 +574,8 @@ const year = new Date().getFullYear();
   .contact-form button span { font-size: 22px; }
   footer { background: var(--pine); color: #b3cdc3; }
   .footer-top { display: grid; grid-template-columns: minmax(260px, 1.2fr) minmax(270px, 1fr) 120px; gap: clamp(38px, 7vw, 100px); padding: 68px 0 54px; }
+  .footer-intro { grid-column: 1; }
+  .footer-details { grid-column: 2; }
   .footer-logo { color: #fff; margin-bottom: 37px; }
   .footer-logo .logo-name { color: #c5e658; }
   .footer-logo .logo-tagline { color: #a9c4b9; }
@@ -556,7 +587,7 @@ const year = new Date().getFullYear();
   .footer-kicker { margin: 0 0 5px; color: #84aaa0; font-size: 12px; font-weight: 700; }
   .footer-detail a { color: #f4f8ed; font-size: 15px; font-weight: 600; text-decoration: none; }
   .footer-detail a:hover, .footer-nav a:hover { color: #c5e658; }
-  .footer-nav { display: flex; align-items: flex-start; flex-direction: column; gap: 12px; padding-top: 7px; }
+  .footer-nav { grid-column: 3; display: flex; align-items: flex-start; flex-direction: column; gap: 12px; padding-top: 7px; }
   .footer-nav .footer-kicker { margin-bottom: 3px; }
   .footer-nav a { color: #d6e5de; font-size: 14px; text-decoration: none; }
   .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 19px 0 24px; border-top: 1px solid #356157; }
@@ -564,6 +595,10 @@ const year = new Date().getFullYear();
   .footer-call { color: #c5e658; font-size: 13px; font-weight: 700; text-decoration: none; }
   .footer-call span { margin-left: 7px; font-size: 17px; vertical-align: -1px; }
   a:focus-visible { outline: 3px solid #91bd27; outline-offset: 4px; }
+  .whatsapp-float { position: fixed; right: max(22px, env(safe-area-inset-right)); bottom: max(22px, env(safe-area-inset-bottom)); z-index: 20; display: grid; place-items: center; width: 62px; height: 62px; color: #fff; background: #25d366; border: 2px solid rgba(255, 255, 255, .9); border-radius: 50%; box-shadow: 0 9px 24px rgba(10, 55, 47, .3); transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease; }
+  .whatsapp-float svg { width: 34px; height: 34px; fill: currentColor; }
+  .whatsapp-float:hover { color: #fff; background: #1fbd59; transform: translateY(-3px); box-shadow: 0 13px 28px rgba(10, 55, 47, .35); }
+  .whatsapp-float:focus-visible { outline: 3px solid #143d36; outline-offset: 4px; }
 
   
 /* Detalle de servicios */
@@ -572,6 +607,7 @@ const year = new Date().getFullYear();
 .service-detail-content {max-width: 540px;}
 .service-detail-content h2 {margin: 0 0 25px;font-size: clamp(34px, 4vw, 49px);line-height: 1.12;}
 .service-detail-content > p:not(.section-label) {color: #5e746d;font-size: 16px;line-height: 1.8;margin: 0 0 18px;}
+.community-responsive-copy { display: none; }
 
 .service-detail-link {
   display: inline-flex;
@@ -640,15 +676,17 @@ body.dialog-open { overflow: hidden; }
 }
 
 /* Responsive */
-@media (max-width: 680px) {
-  .service-detail {
+  @media (max-width: 680px) {
+    .whatsapp-float { right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); width: 56px; height: 56px; }
+    .whatsapp-float svg { width: 31px; height: 31px; }
+    .service-detail {
     grid-template-columns: 1fr;
     gap: 30px;
     padding-top: 65px;
   }
 
   .service-detail-image {
-    height: 300px;
+    height: 260px;
   }
 
   .service-detail-content h2 {
@@ -665,21 +703,38 @@ body.dialog-open { overflow: hidden; }
 }
 }
 
+  @media (prefers-reduced-motion: reduce) {
+    .whatsapp-float { transition: none; }
+  }
+
   
   
+  @media (min-width: 681px) and (max-width: 980px) {
+    .service-detail { gap: 38px; }
+    .service-detail-image { height: auto; aspect-ratio: 4 / 3; }
+    .tablet-hidden-copy { display: none; }
+  }
+
   @media (max-width: 980px) {
+    .community-desktop-copy { display: none; }
+    .community-responsive-copy { display: block; }
     .wrap { width: min(100% - 56px, 820px); }
     .header-content { min-height: 92px; column-gap: 30px; }
     nav { gap: 20px; }
     .hero { min-height: 555px; }
     .services { grid-template-columns: repeat(2, 1fr); }
     .service-card { min-height: 220px; }
-    .service-card:last-child { grid-column: 1 / -1; }
-    .service-card:last-child p { max-width: 440px; }
     .intro { padding: 92px 0 96px; }
     .footer-top { grid-template-columns: 1fr 1fr; gap: 46px 56px; }
     .footer-nav { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 22px; padding-top: 0; }
     .footer-nav .footer-kicker { margin: 0 8px 0 0; }
+  }
+  @media (min-width: 681px) and (max-width: 980px) {
+    .footer-top { grid-template-columns: minmax(230px, 1.2fr) minmax(230px, 1fr) minmax(90px, .45fr); gap: 32px; }
+    .footer-intro { grid-column: 1; }
+    .footer-details { grid-column: 2; }
+    .footer-nav { grid-column: 3; flex-direction: column; align-items: flex-start; gap: 12px; padding-top: 7px; }
+    .footer-nav .footer-kicker { margin: 0 0 3px; }
   }
   @media (max-width: 680px) {
     .wrap { width: min(100% - 34px, 560px); }
@@ -694,10 +749,11 @@ body.dialog-open { overflow: hidden; }
     .hero-content p { margin-bottom: 16px; }
     h1 { font-size: clamp(38px, 11vw, 52px); line-height: 1.06; }
     .button { width: 100%; justify-content: space-between; margin-top: 28px; padding: 16px 19px 16px 22px; }
-    .services { grid-template-columns: 1fr; gap: 12px; margin-top: -28px; }
-    .service-card, .service-card:last-child { grid-column: auto; min-height: 0; padding: 25px; }
-    .service-card h2 { margin-top: 25px; }
-    .service-card:last-child p { max-width: 280px; }
+    .services { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 36px; }
+    .service-card, .service-card:last-child { grid-column: auto; min-height: 150px; padding: 18px; }
+    .service-card .service-icon { width: 34px; height: 34px; font-size: 19px; }
+    .service-card h2 { margin-top: 20px; font-size: clamp(17px, 4.8vw, 22px); letter-spacing: -.8px; overflow-wrap: anywhere; }
+    .service-card p { display: none; }
     .company-summary { padding-top: 42px; }
     .company-summary p { font-size: 18px; line-height: 1.6; letter-spacing: -.45px; }
     h1, h2 { letter-spacing: -2px; }
@@ -707,11 +763,14 @@ body.dialog-open { overflow: hidden; }
     .contact-content { grid-template-columns: 1fr; gap: 34px; padding: 58px 0; }
     .contact-copy h2 { font-size: 40px; }
     .contact-form { padding: 24px; }
-    .footer-top { grid-template-columns: 1fr; gap: 39px; padding: 48px 0 38px; }
-    .footer-logo { margin-bottom: 29px; }
-    .footer-intro h2 { max-width: 330px; }
-    .footer-details { gap: 22px; padding-top: 0; }
-    .footer-nav { grid-column: auto; flex-wrap: wrap; gap: 11px 19px; }
+    .footer-top { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 10px 24px; padding: 48px 0 38px; }
+    .footer-intro { grid-column: 1; grid-row: 1; }
+    .footer-logo { margin-bottom: 0; }
+    .footer-intro h2, .footer-intro > p { display: none; }
+    .footer-intro h2 { max-width: 330px; font-size: clamp(27px, 7vw, 36px); }
+    .footer-intro > p { font-size: 14px; }
+    .footer-details { grid-column: 2; grid-row: 1 / span 2; gap: 22px; padding-top: 0; }
+    .footer-nav { grid-column: 1; grid-row: 2; flex-wrap: wrap; gap: 11px 19px; }
     .footer-nav .footer-kicker { flex-basis: 100%; margin: 0 0 2px; }
     .footer-bottom { align-items: flex-start; flex-direction: column; gap: 14px; padding: 18px 0 22px; }
   }
@@ -722,7 +781,15 @@ body.dialog-open { overflow: hidden; }
     .logo-name { font-size: 27px; }
     .header-phone { gap: 7px; padding: 7px 10px 7px 8px; font-size: 12px; }
     .hero { min-height: 490px; }
-    .service-card { padding: 22px; }
+    .service-card { min-height: 140px; padding: 15px; }
+    .footer-top { gap: 10px 16px; }
+    .footer-logo { gap: 7px; }
+    .footer-logo .logo-image { width: 45px; height: 45px; }
+    .footer-logo .logo-name { font-size: 24px; }
+    .footer-intro h2 { font-size: 26px; }
+    .footer-detail { grid-template-columns: 29px minmax(0, 1fr); gap: 9px; }
+    .footer-detail-icon { width: 29px; height: 29px; }
+    .footer-detail a, .footer-detail p { overflow-wrap: anywhere; }
     .company-summary { padding-top: 36px; }
     .budget-dialog { width: calc(100vw - 20px); max-height: calc(100vh - 20px); }
     .budget-dialog-panel { max-height: calc(100vh - 20px); padding: 25px 20px; border-radius: 18px; }
