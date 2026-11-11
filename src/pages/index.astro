@@ -362,6 +362,7 @@ const year = new Date().getFullYear();
           <form class="contact-form" action="https://formsubmit.co/info@limpama.com" method="post">
             <input type="hidden" name="_subject" value="Nueva solicitud de presupuesto desde limpama.es" />
             <input type="hidden" name="_next" value="https://limpama.es/gracias/" />
+            <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_url" value="https://limpama.es/#contacto" />
             <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
@@ -385,6 +386,10 @@ const year = new Date().getFullYear();
                 <option value="Desatoros">Desatoros</option>
                 <option value="Otros">Otros</option>
               </select>
+            </div>
+            <div class="form-field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
             </div>
             <button type="submit">Solicitar presupuesto <span aria-hidden="true">→</span></button>
           </form>
@@ -459,6 +464,7 @@ const year = new Date().getFullYear();
         <form class="contact-form budget-dialog-form" action="https://formsubmit.co/info@limpama.com" method="post">
           <input type="hidden" name="_subject" value="Nueva solicitud de presupuesto desde limpama.es" />
           <input type="hidden" name="_next" value="https://limpama.es/gracias/" />
+          <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_url" value="https://limpama.es/" />
           <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
@@ -481,6 +487,10 @@ const year = new Date().getFullYear();
               <option value="Desatoros">Desatoros</option>
               <option value="Otros">Otros</option>
             </select>
+          </div>
+          <div class="form-field">
+            <label for="modal-mensaje">Mensaje</label>
+            <textarea id="modal-mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
           </div>
           <button type="submit">Solicitar presupuesto <span aria-hidden="true">→</span></button>
         </form>
@@ -576,9 +586,10 @@ const year = new Date().getFullYear();
   .contact-form { padding: clamp(25px, 4vw, 42px); background: rgba(245, 247, 242, .5); border: 1px solid rgba(20, 61, 54, .12); border-radius: 22px; backdrop-filter: blur(10px); }
   .form-field { display: grid; gap: 8px; margin-bottom: 20px; }
   .form-field label { color: var(--pine); font-size: 14px; font-weight: 700; }
-  .form-field input, .form-field select { width: 100%; min-height: 52px; padding: 0 16px; color: var(--ink); background: rgba(255, 255, 255, .65); border: 1px solid rgba(20, 61, 54, .2); border-radius: 10px; font: 500 15px/1 'DM Sans', sans-serif; }
-  .form-field input::placeholder { color: #789087; }
-  .form-field input:focus, .form-field select:focus { outline: 3px solid rgba(145, 189, 39, .3); border-color: #689320; }
+  .form-field input, .form-field select, .form-field textarea { width: 100%; min-height: 52px; padding: 0 16px; color: var(--ink); background: rgba(255, 255, 255, .65); border: 1px solid rgba(20, 61, 54, .2); border-radius: 10px; font: 500 15px/1 'DM Sans', sans-serif; }
+  .form-field textarea { min-height: 124px; padding-block: 15px; line-height: 1.5; resize: vertical; }
+  .form-field input::placeholder, .form-field textarea::placeholder { color: #789087; }
+  .form-field input:focus, .form-field select:focus, .form-field textarea:focus { outline: 3px solid rgba(145, 189, 39, .3); border-color: #689320; }
   .contact-form button { width: 100%; min-height: 54px; display: flex; align-items: center; justify-content: space-between; margin-top: 8px; padding: 0 19px 0 22px; color: #143d36; background: rgba(166, 218, 120, .58); border: 1px solid rgba(74, 121, 37, .28); border-radius: 100px; font: 800 15px/1 'DM Sans', sans-serif; cursor: pointer; transition: background-color .2s ease, transform .2s ease; }
   .contact-form button:hover { background: rgba(166, 218, 120, .82); transform: translateY(-1px); }
   .contact-form button:focus-visible { outline: 3px solid #91bd27; outline-offset: 4px; }
