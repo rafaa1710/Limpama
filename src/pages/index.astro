@@ -359,7 +359,12 @@ const year = new Date().getFullYear();
             <a href="mailto:info@limpama.es">info@limpama.es</a>
           </div>
 
-          <form class="contact-form" action="mailto:info@limpama.es" method="post" enctype="text/plain">
+          <form class="contact-form" action="https://formsubmit.co/info@limpama.es" method="post">
+            <input type="hidden" name="_subject" value="Nueva solicitud de presupuesto desde limpama.es" />
+            <input type="hidden" name="_next" value="https://limpama.es/gracias/" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_url" value="https://limpama.es/#contacto" />
+            <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <div class="form-field">
               <label for="nombre">Nombre</label>
               <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required />
@@ -451,7 +456,12 @@ const year = new Date().getFullYear();
         <h2 id="budget-dialog-title">Cuéntanos qué necesitas</h2>
         <p class="budget-dialog-copy">Déjanos tus datos y nos pondremos en contacto contigo para preparar un presupuesto a medida.</p>
 
-        <form class="contact-form budget-dialog-form" action="mailto:info@limpama.es" method="post" enctype="text/plain">
+        <form class="contact-form budget-dialog-form" action="https://formsubmit.co/info@limpama.es" method="post">
+          <input type="hidden" name="_subject" value="Nueva solicitud de presupuesto desde limpama.es" />
+          <input type="hidden" name="_next" value="https://limpama.es/gracias/" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_url" value="https://limpama.es/" />
+          <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <div class="form-field">
             <label for="modal-nombre">Nombre</label>
             <input id="modal-nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required />
@@ -503,6 +513,7 @@ const year = new Date().getFullYear();
         if (event.target === budgetDialog) closeBudgetDialog();
       });
       budgetDialog?.addEventListener('close', () => document.body.classList.remove('dialog-open'));
+
     </script>
   </body>
 </html>
@@ -572,6 +583,7 @@ const year = new Date().getFullYear();
   .contact-form button:hover { background: rgba(166, 218, 120, .82); transform: translateY(-1px); }
   .contact-form button:focus-visible { outline: 3px solid #91bd27; outline-offset: 4px; }
   .contact-form button span { font-size: 22px; }
+  .form-honeypot { position: absolute !important; left: -9999px !important; width: 1px !important; height: 1px !important; }
   footer { background: var(--pine); color: #b3cdc3; }
   .footer-top { display: grid; grid-template-columns: minmax(260px, 1.2fr) minmax(270px, 1fr) 120px; gap: clamp(38px, 7vw, 100px); padding: 68px 0 54px; }
   .footer-intro { grid-column: 1; }
