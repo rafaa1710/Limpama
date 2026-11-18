@@ -1,19 +1,60 @@
 ---
+import ContactPrivacyNotice from '../components/ContactPrivacyNotice.astro';
 const year = new Date().getFullYear();
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Cuidado profesional de piscinas y jardines." />
-    <link rel="icon" type="image/webp" sizes="512x512" href="/palmeras-512.webp" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
-    <title>Limpama | Piscinas y jardines</title>
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Limpama | Piscinas y jardines</title>
+
+  <meta
+    name="description"
+    content="Cuidado profesional de piscinas, jardines y comunidades en Málaga y la Costa del Sol."
+  />
+
+  <!-- Favicon: palmera en la pestaña -->
+  <link
+    rel="icon"
+    type="image/webp"
+    href="/palmeras-512.webp"
+  />
+
+  <!-- Vista previa para WhatsApp y redes sociales -->
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="Limpama | Piscinas y jardines"
+  />
+  <meta
+    property="og:description"
+    content="Especialistas en mantenimiento de piscinas, jardines y comunidades en Málaga y la Costa del Sol."
+  />
+  <meta
+    property="og:image"
+    content="https://limpama.es/logoLimpama.webp"
+  />
+  <meta
+    property="og:image:alt"
+    content="Logo de Limpama"
+  />
+  <meta
+    property="og:url"
+    content="https://limpama.es/"
+  />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
   <body>
     <header class="site-header">
       <div class="wrap header-content">
@@ -43,7 +84,7 @@ const year = new Date().getFullYear();
       <section class="hero" aria-labelledby="hero-title">
         <img
           class="hero-image"
-          src="/limpama-hero.webp"
+          src="/furgoneta-limpama-logo-nombre.webp"
           alt="Piscina exterior rodeada de vegetación"
         />
         <div class="hero-overlay"></div>
@@ -103,7 +144,7 @@ const year = new Date().getFullYear();
   <p>Descubre cómo podemos ayudarte a mantener tus espacios siempre en perfectas condiciones.</p>
 </section>
 
-      
+
       <section class="service-detail wrap" id="jardineria">
         <div class="service-detail-image">
           <img
@@ -141,7 +182,7 @@ const year = new Date().getFullYear();
       </section>
 
 
-      
+
 <section class="service-detail service-detail-reverse wrap" id="piscinas">
   <div class="service-detail-image">
     <img
@@ -391,6 +432,7 @@ const year = new Date().getFullYear();
               <label for="mensaje">Mensaje</label>
               <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
             </div>
+            <ContactPrivacyNotice />
             <button type="submit">Solicitar presupuesto <span aria-hidden="true">→</span></button>
           </form>
         </div>
@@ -434,11 +476,12 @@ const year = new Date().getFullYear();
       </div>
       <div class="wrap footer-bottom">
         <small>© {year} Limpama. Todos los derechos reservados.</small>
+        <a class="footer-call" href="/privacidad/">Política de privacidad</a>
         <small>Web realizada por:<a class="footer-call" href="https://www.uppersystem.es" target="_blank" rel="noopener noreferrer"> UpperSystem tech</a></small>
-        
+
         <a class="footer-call" href="tel:+34686364887">Llámanos para tu presupuesto <span aria-hidden="true">→</span></a>
       </div>
-      
+
     </footer>
 
     <a
@@ -492,6 +535,7 @@ const year = new Date().getFullYear();
             <label for="modal-mensaje">Mensaje</label>
             <textarea id="modal-mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
           </div>
+          <ContactPrivacyNotice />
           <button type="submit">Solicitar presupuesto <span aria-hidden="true">→</span></button>
         </form>
       </div>
@@ -664,7 +708,7 @@ const year = new Date().getFullYear();
   .whatsapp-float:hover { color: #fff; background: #1fbd59; transform: translateY(-3px); box-shadow: 0 13px 28px rgba(10, 55, 47, .35); }
   .whatsapp-float:focus-visible { outline: 3px solid #143d36; outline-offset: 4px; }
 
-  
+
 /* Detalle de servicios */
 .service-detail {display: grid;grid-template-columns: 1fr 1fr;align-items: center;gap: 75px;padding-top: 100px;}
 .service-detail-image {height: 480px;overflow: hidden;border-radius: 22px;}.service-detail-image img {width: 100%;height: 100%;object-fit: cover;display: block;}
@@ -771,8 +815,8 @@ body.dialog-open { overflow: hidden; }
     .whatsapp-float { transition: none; }
   }
 
-  
-  
+
+
   @media (min-width: 681px) and (max-width: 980px) {
     .service-detail { gap: 38px; }
     .service-detail-image { height: auto; aspect-ratio: 4 / 3; }
